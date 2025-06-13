@@ -1,3 +1,4 @@
+# Readme md
 # Historical Birth Date Checker/Birth Date Finder
 This Python script prompts the user for their first and last name, as well as their birth year, month, and day, and then returns the day of the week they were born.
 The script includes input validation to ensure that the date entered is within a specific range and is valid.
