@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthdate, day of the week, date checker</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- additional meta tags -->
+    <meta name="description"
+        content="A web application that allows users to check the day of the week they were born based on their birth date.">
+    <meta name="author" content="Hazrat Ali">
+    <meta name="keywords" content="birthdate, day of the week, date checker, web application">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Birthdate Checker">
+    <meta property="og:description"
+        content="Find out what day of the week you were born on by entering your birth date.">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Welcome to Historical Birth Date Checker</h1>
+        <p class="text-center mb-4">
+            NOTE:<br>
+            --> Here you can view any year date between 1700 to 2050,<br>
+            --> so you must enter between 1700 to 2050.<br>
+            --> Have a nice day sir, thank you! 😉
+        </p>
+
+        <form id="birthdateForm">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">* Enter your first name:</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName" class="form-label">* Enter your last name:</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="year" class="form-label">* Enter your birth year:</label>
+                <input type="number" class="form-control" id="year" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="month" class="form-label">* Enter your birth month:</label>
+                <input type="number" class="form-control" id="month" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="day" class="form-label">* Enter your birth day:</label>
+                <input type="number" class="form-control" id="day" required>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100" onclick="checkBirthDate()">Submit</button>
+        </form>
+
+        <p id="result" class="mt-4"></p>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="./mein.js"></script>
+
+</body>
+
+</html>
